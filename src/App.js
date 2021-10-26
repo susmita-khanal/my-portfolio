@@ -7,6 +7,7 @@ import Services from "./components/Services";
 import Pages from "./components/Pages";
 import Blog from "./components/Blog";
 import Contact from "./components/Contact";
+import Footer from "./Footer";
 
 import "./App.css";
 
@@ -24,6 +25,7 @@ function App() {
                         <Route exact path="/blog" component={Blog} />
                         <Route exact path="/contact" component={Contact} />
                     </Switch>
+                    <Footer />
                 </Router>
             </div>
         </>

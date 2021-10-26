@@ -1,7 +1,9 @@
 .about {
-    margin-top: 120%;
+    /* margin-top: 120%; */
+    margin-top: 15%;
     width: 90%;
     margin-left: 5%;
+    margin-bottom: 40px;
     /* margin: auto; */
 }
 .about-container {
@@ -12,11 +14,12 @@
     text-transform: uppercase;
     font-weight: bold;
     color: rgb(34, 34, 34);
+    padding-bottom: 20px;
 }
 .about-myself p {
     font-size: 15px;
     color: gray;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     letter-spacing: 0.4px;
     text-align: justify;
     line-height: 24px;
@@ -72,13 +75,14 @@
         margin: 20px 0;
     }
     .about {
-        margin-top: -70%;
+        margin-top: 40%;
     }
 }
 @media only screen and (min-width: 1024px) {
     .about {
         display: flex;
-        margin-top: 18%;
+        /* margin-top: 18%; */
+        margin-top: 70%;
     }
     .about-container {
         padding-right: 20px;
@@ -105,7 +109,7 @@
 }
 @media only screen and (min-width: 1280px) {
     .about {
-        margin-top: -2%;
+        margin-top: 32%;
     }
     .about-container {
         /* padding-right: 20px; */

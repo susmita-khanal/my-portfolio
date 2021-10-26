@@ -6,12 +6,21 @@ import "./Navbar.css";
 
 const Navbar = () => {
     const [navLinkOpen, setNavLinkOpen] = useState(false);
+    const [scrollColor, setScrollColor] = useState(false);
     const handleBar = () => {
         setNavLinkOpen(!navLinkOpen);
     };
+    const changeBackground = () => {
+        if (window.scrollY >= 70) {
+            setScrollColor(true);
+        } else {
+            setScrollColor(false);
+        }
+    };
+    window.addEventListener("scroll", changeBackground);
     return (
         <>
-            <div className="navbar">
+            <div className={scrollColor ? "navbar-active" : "navbar"}>
                 <div className="navbar-logo">MEETME</div>
                 <div onClick={handleBar} className="navbar-bar">
                     {navLinkOpen ? (

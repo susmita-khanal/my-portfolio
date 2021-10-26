@@ -67,7 +67,7 @@
             rgb(121, 122, 255),
             rgb(135, 232, 255) 90%
         );
-        height: 120px;
+        /* height: 120px; */
     }
     .nav-menu-active {
         display: none;
@@ -96,5 +96,14 @@
     .my-info h1 {
         font-size: 40px;
         width: 80%;
+    }
+    .navbar-active {
+        background-color: black;
+        height: 70px;
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
     }
 }

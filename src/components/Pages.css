@@ -1,0 +1,111 @@
+.clients {
+    background-color: rgb(249, 249, 255);
+}
+.client-top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+}
+.top-title {
+    font-size: 24px;
+    text-transform: uppercase;
+    width: 70%;
+    text-align: center;
+    color: rgb(36, 36, 36);
+    margin-bottom: 10px;
+}
+
+.top-para {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    line-height: 26px;
+    color: #777;
+    width: 80%;
+    text-align: center;
+    letter-spacing: 0.4px;
+    /* display: block;
+    margin-bottom: 0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; */
+    /* width: 90%;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px; */
+}
+.client-box {
+    display: flex;
+    flex-direction: column;
+}
+.client-box-div {
+    border: 1px solid white;
+    width: 90%;
+    background-color: white;
+    margin: 16px 5%;
+    padding: 40px 30px;
+    border-radius: 8px;
+}
+.client-box-icon {
+    font-size: 60px;
+    color: grey;
+}
+.client-box-title {
+    color: #222;
+    font-size: 21px;
+    font-family: "Heebo", sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.client-box-paragraph {
+    color: grey;
+    line-height: 26px;
+    font-family: "Roboto", sans-serif;
+}
+@media only screen and (min-width: 768px) {
+    .client-box-div {
+        width: 40%;
+    }
+    .client-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .top-para {
+        width: 80%;
+    }
+    .client-box-title {
+        width: 100%;
+        display: inline-block;
+    }
+    .client-box-title::after {
+        display: inline-block;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .clients {
+        margin-top: 0%;
+        padding-top: 0%;
+    }
+
+    .client-box-div {
+        width: 28%;
+    }
+    .client-box {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 5%;
+    }
+    .client-box-div {
+        margin-right: -26px;
+    }
+}
