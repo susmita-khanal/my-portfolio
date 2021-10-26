@@ -1,0 +1,128 @@
+.about {
+    margin-top: 120%;
+    width: 90%;
+    margin-left: 5%;
+    /* margin: auto; */
+}
+.about-container {
+    width: 100%;
+}
+.about-myself h2 {
+    font-size: 34px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(34, 34, 34);
+}
+.about-myself p {
+    font-size: 15px;
+    color: gray;
+    margin-top: 10px;
+    letter-spacing: 0.4px;
+    text-align: justify;
+    line-height: 24px;
+}
+.box {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.103);
+    padding: 20px;
+    margin: 10px 0;
+    /* margin: 20px; */
+}
+.myself-icons {
+    font-size: 35px;
+    color: rgba(34, 144, 172, 0.514);
+    /* color: linear-gradient(
+        to right,
+        rgb(121, 122, 255),
+        rgb(135, 232, 255) 90%
+    ); */
+}
+.num {
+    font-size: 20px;
+    font-weight: 700;
+}
+.data {
+    color: grey;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.rating-bar {
+    display: inline-block;
+    width: 100%;
+    padding: 6px 0;
+}
+.bar {
+    padding: 10px 0;
+}
+.skills {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(34, 34, 34);
+}
+
+@media only screen and (min-width: 768px) {
+    .box {
+        width: 30%;
+        margin: 0px 12px;
+    }
+    .myself-box {
+        display: flex;
+        flex-direction: row;
+        margin: 20px 0;
+    }
+    .about {
+        margin-top: -70%;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .about {
+        display: flex;
+        margin-top: 18%;
+    }
+    .about-container {
+        padding-right: 20px;
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .rating {
+        width: 480px;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .myself-box {
+        width: 100%;
+    }
+    .box {
+        width: 300px;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    .about {
+        margin-top: -2%;
+    }
+    .about-container {
+        /* padding-right: 20px; */
+        width: 500px;
+    }
+    .rating {
+        width: 650px;
+        padding-left: 50px;
+    }
+    .myself-box {
+        margin-left: -10px;
+    }
+    .box {
+        /* width: 300px; */
+        width: 100%;
+    }
+    .data {
+        font-size: 13px;
+    }
+}
